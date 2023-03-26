@@ -1,0 +1,61 @@
+vol: 1
+out:
+  - sine_1
+  - sine_2
+  - sine_3
+  - sine_4
+noise:
+
+oscillators:
+# sine
+  - name: sine_1
+    type: Sine
+    freq:
+      val: 40
+    amp:
+      val: 1
+
+  - name: sine_2
+    type: Sine
+    freq: 
+      val: 63
+    amp:
+      val: 1
+
+  - name: sine_3
+    type: Sine
+    freq: 
+      val: 87
+    amp: 
+      val: 1
+
+  - name: sine_4
+    type: Sine
+    freq:
+      val: 104
+    amp: 
+      val: 1
+    
+# square LFOs
+  - name: sq_lfo_1
+    type: Square
+    freq:
+      val: 0.1
+    amp: 
+      val: 1
+
+  - name: sq_lfo_2
+    type: Square
+    freq:
+      val: 0.3
+    amp:
+      val: 1
+
+# sine LFOs
+  - name: sine_lfo_1
+    type: Sine
+    freq: 
+      val: 0.1
+    amp:
+      val: 1
+    
