@@ -37,14 +37,24 @@ oscillators:
       val: 0.8
 
   - name: seventh
-    type: Sine
+    type: Sawtooth
     freq:
       val: 415
       mod: [fm]
       modamp: 0.9
     amp:
-      val: 1
+      val: 0.5
+      mod: [amp-mod2]
+      ampmod: 1
 
+
+  - name: amp-mod2
+    type: Sine
+    freq: 
+      val: 0.8
+    amp:
+      val: 1
+  
   - name: amp-mod
     type: Sine
     freq: 
