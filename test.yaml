@@ -1,0 +1,13 @@
+vol: 1
+out: [o1]
+oscillators:
+  - name: o1
+    type: Sine
+    freq: {val: 200, mod: [l1], modamp: 30}
+    amp: {val: 1}
+
+  - name: l1
+    type: Square
+    freq: {val: 0.3}
+    amp: {val: 1}
+

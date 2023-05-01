@@ -3,13 +3,13 @@ out: [o1, o2]
 oscillators:
   - name: o1
     type: Triangle
-    freq: {val: 200, mod: [l1, l2, l3], modamp: 48}
+    freq: {val: 200, mod: [l1, l2, l3], modamp: 40}
     amp: {val: 0.12}
     pan: {mod: [l4], modamp: 0.5}
 
   - name: o2
     type: Sine
-    freq: {val: 200, mod: [l1, l2, l3], modamp: 48}
+    freq: {val: 200, mod: [l1, l2, l3], modamp: 40}
     amp: {val: 0.5, mod: [o1], modamp: 0.2}
     pan: {mod: [l4], modamp: 0.5}
 
@@ -21,16 +21,10 @@ oscillators:
 
   - name: l2
     type: Square
-    freq: {val: 0.2, mod: [l4], modamp: 0.05}
+    freq: {val: 0.2}
     amp: {val: 1}
 
   - name: l3
     type: Sine
-    freq: {val: 1}
+    freq: {val: 1.4}
     amp: {val: 0.05}
-
-  - name: l4
-    type: Triangle
-    freq: {val: 0.3}
-    amp: {val: 1}
-
