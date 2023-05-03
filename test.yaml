@@ -1,27 +1,12 @@
 vol: 1
-out: [o1, o2]
-oscillators:
-  - name: o1
-    type: Sine
-    freq: {val: 200, mod: [l1], modamp: 30}
+out: [n1]
+noise: 
+  - name: n1
+    amp: {val: 0.1, mod: [c1], modamp: 0.05}
+    pan: {mod: [c1], modamp: 1}
+
+custom:
+  - name: c1
     amp: {val: 1}
-
-  - name: o2
-    type: Sine
-    freq: {val: 230}
-    amp: {val: 0}
-
-  - name: o3
-    type: Sine
-    freq: {val: 170}
-    amp: {val: 0}
-
-  - name: l1
-    type: Square
-    freq: {val: 0.8, mod: [l2], modamp: 0.8}
-    amp: {val: 1}
-
-  - name: l2
-    type: Sine
-    freq: {val: 0.2}
-    amp: {val: 1}
+    freq: {val: 1}
+    data: [1,-1,0,0.3,-0.6,0.2]
