@@ -1,12 +1,13 @@
 vol: 1
-out: [n1]
-noise: 
-  - name: n1
-    amp: {val: 0.1, mod: [c1], modamp: 0.05}
-    pan: {mod: [c1], modamp: 1}
+out: [o1]
+oscillators:
+  - name: o1
+    type: Square
+    amp: {val: 1}
+    freq: {val: 200, mod: [c1], modamp: 30}
 
 custom:
   - name: c1
     amp: {val: 1}
     freq: {val: 1}
-    data: [1,-1,0,0.3,-0.6,0.2]
+    data: [0, 0.7, 1, 0.3, -0.7, -1, -0.3]
