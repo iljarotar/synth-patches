@@ -37,7 +37,7 @@ oscillators:
       val: 0.8
 
   - name: seventh
-    type: Sawtooth
+    type: Sine
     freq:
       val: 415
       mod: [fm]
