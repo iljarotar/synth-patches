@@ -1,0 +1,61 @@
+vol: 1
+out: [n1,n3,o1]
+
+noises:
+  - name: n1
+    amp: {val: 0.17}
+    filters: [f1]
+    pan: {val: -0.2}
+
+  - name: n2
+    amp: {val: 1}
+
+  - name: n3
+    amp: {val: 0.1, mod: [lfo4], mod-amp: 0.04}
+    filters: [f3]
+    pan: {val: 0.1, mod: [lfo2], mod-amp: 0.4}
+
+oscillators:
+  - name: o1
+    type: Sine
+    amp: {val: 0.03}
+    freq: {val: 70, mod: [s1,n2,lfo3], mod-amp: 30}
+    filters: [f2]
+    pan: {val: 0.3}
+  
+  - name: lfo1
+    type: Sine
+    amp: {val: 1}
+    freq: {val: 8, mod: [lfo2], mod-amp: 3}
+
+  - name: lfo2
+    type: Sine
+    amp: {val: 1}
+    freq: {val: 0.01}
+
+  - name: lfo3
+    type: Sine
+    amp: {val: 0.05}
+    freq: {val: 7, mod: [lfo2], mod-amp: 1}
+
+  - name: lfo4
+    type: Sine
+    amp: {val: 1}
+    freq: {val: 0.05}
+
+samplers:
+  - name: s1
+    amp: {val: 0.2}
+    freq: {val: 0.3}
+    inputs: [n2]
+
+filters:
+  - name: f1
+    high-cutoff: {val: 80, mod: [lfo2], mod-amp: 20}
+
+  - name: f2
+    high-cutoff: {val: 800}
+
+  - name: f3
+    low-cutoff: {val: 13000}
+    high-cutoff: {val: 13100}
