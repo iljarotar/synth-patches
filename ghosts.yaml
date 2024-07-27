@@ -1,5 +1,5 @@
 vol: 1
-out: [n1,n3,o1]
+out: [n1,n3,o1,o2,o3]
 
 noises:
   - name: n1
@@ -22,6 +22,20 @@ oscillators:
     freq: {val: 70, mod: [s1,n2,lfo3], mod-amp: 30}
     filters: [f2]
     pan: {val: 0.3}
+
+  - name: o2
+    type: Sawtooth
+    amp: {val: 0, mod: [e1], mod-amp: 0.002}
+    freq: {val: 12000, mod: [lfo5,n2], mod-amp: 1.5}
+    pan: {val: -0.2}
+    filters: [f4]
+
+  - name: o3
+    type: Sawtooth
+    amp: {val: 0, mod: [e1], mod-amp: 0.002}
+    freq: {val: 12012, mod: [lfo5,n2], mod-amp: 3}
+    pan: {val: -0.1}
+    filters: [f4]
   
   - name: lfo1
     type: Sine
@@ -43,11 +57,31 @@ oscillators:
     amp: {val: 1}
     freq: {val: 0.05}
 
+  - name: lfo5
+    type: Triangle
+    amp: {val: 0.7, mod: [lfo6], mod-amp: 0.2}
+    freq: {val: 4.5, mod: [lfo6], mod-amp: 0.5}
+
+  - name: lfo6
+    type: Sine
+    amp: {val: 1}
+    freq: {val: 0.5}
+
 samplers:
   - name: s1
     amp: {val: 0.2}
     freq: {val: 0.3}
     inputs: [n2]
+
+envelopes:
+  - name: e1
+    bpm: {val: 1.4}
+    peak: {val: 1}
+    sustain-level: {val: 0.2}
+    attack: {val: 0.1}
+    decay: {val: 0.2}
+    sustain: {val: 3}
+    release: {val: 5}
 
 filters:
   - name: f1
@@ -59,3 +93,6 @@ filters:
   - name: f3
     low-cutoff: {val: 13000}
     high-cutoff: {val: 13100}
+
+  - name: f4
+    high-cutoff: {val: 3500}
