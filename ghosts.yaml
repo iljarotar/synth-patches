@@ -1,5 +1,5 @@
 vol: 1
-out: [n1,n3,o1,o2,o3]
+out: [n1,n3,o1,o2,o3,o4]
 
 noises:
   - name: n1
@@ -36,6 +36,12 @@ oscillators:
     freq: {val: 12012, mod: [lfo5,n2], mod-amp: 3}
     pan: {val: -0.1}
     filters: [f4]
+
+  - name: o4
+    type: Square
+    amp: {val: 0, mod: [e2], mod-amp: 0.004}
+    freq: {val: 3000, mod: [s2], mod-amp: 600}
+    filters: [f5]
   
   - name: lfo1
     type: Sine
@@ -73,6 +79,11 @@ samplers:
     freq: {val: 0.3}
     inputs: [n2]
 
+  - name: s2
+    amp: {val: 1}
+    freq: {val: 30, mod: [lfo3], mod-amp: 20}
+    inputs: [n2]
+
 envelopes:
   - name: e1
     bpm: {val: 1.4}
@@ -82,6 +93,15 @@ envelopes:
     decay: {val: 0.2}
     sustain: {val: 3}
     release: {val: 5}
+
+  - name: e2
+    bpm: {val: 1.7}
+    peak: {val: 1}
+    sustain-level: {val: 0.1}
+    attack: {val: 0.01}
+    decay: {val: 0.05}
+    sustain: {val: 0}
+    release: {val: 3.6}
 
 filters:
   - name: f1
@@ -96,3 +116,6 @@ filters:
 
   - name: f4
     high-cutoff: {val: 3500}
+
+  - name: f5
+    high-cutoff: {val: 4000}
