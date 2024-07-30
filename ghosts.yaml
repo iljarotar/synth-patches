@@ -1,5 +1,5 @@
 vol: 1
-out: [n1,n3,o1,o2,o3,o4]
+out: [n1,n3,s3,o1,o2,o3]
 
 noises:
   - name: n1
@@ -14,6 +14,13 @@ noises:
     amp: {val: 0.1, mod: [lfo4], mod-amp: 0.04}
     filters: [f3]
     pan: {val: 0.1, mod: [lfo2], mod-amp: 0.4}
+
+  - name: n4
+    amp: {val: 0, mod: [s2,n5], mod-amp: 0.02}
+    filters: [f5]
+
+  - name: n5
+    amp: {val: 0.25}
 
 oscillators:
   - name: o1
@@ -37,12 +44,6 @@ oscillators:
     pan: {val: -0.1}
     filters: [f4]
 
-  - name: o4
-    type: Square
-    amp: {val: 0, mod: [e2], mod-amp: 0.004}
-    freq: {val: 3000, mod: [s2], mod-amp: 600}
-    filters: [f5]
-  
   - name: lfo1
     type: Sine
     amp: {val: 1}
@@ -81,27 +82,33 @@ samplers:
 
   - name: s2
     amp: {val: 1}
-    freq: {val: 30, mod: [lfo3], mod-amp: 20}
+    freq: {val: 60}
     inputs: [n2]
+
+  - name: s3
+    amp: {val: 0, mod: [e2], mod-amp: 1}
+    freq: {val: 44100}
+    pan: {val: -0.4}
+    inputs: [n4]
 
 envelopes:
   - name: e1
     bpm: {val: 1.4}
     peak: {val: 1}
     sustain-level: {val: 0.2}
-    attack: {val: 0.1}
+    attack: {val: 0.5}
     decay: {val: 0.2}
     sustain: {val: 3}
     release: {val: 5}
 
   - name: e2
-    bpm: {val: 1.7}
+    bpm: {val: 0.5}
     peak: {val: 1}
-    sustain-level: {val: 0.1}
-    attack: {val: 0.01}
-    decay: {val: 0.05}
-    sustain: {val: 0}
-    release: {val: 3.6}
+    sustain-level: {val: 0.8}
+    attack: {val: 0.5}
+    decay: {val: 0.2}
+    sustain: {val: 7}
+    release: {val: 6}
 
 filters:
   - name: f1
@@ -118,4 +125,5 @@ filters:
     high-cutoff: {val: 3500}
 
   - name: f5
-    high-cutoff: {val: 4000}
+    low-cutoff: {val: 4000}
+    high-cutoff: {val: 4080}
