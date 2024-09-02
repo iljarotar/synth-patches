@@ -32,14 +32,16 @@ oscillators:
 
   - name: o2
     type: Sawtooth
-    amp: {val: 0, mod: [e1], mod-amp: 0.002}
+    amp: {val: 0.002}
+    envelope: e1
     freq: {val: 12000, mod: [lfo5,n2], mod-amp: 1.5}
     pan: {val: -0.2}
     filters: [f4]
 
   - name: o3
     type: Sawtooth
-    amp: {val: 0, mod: [e1], mod-amp: 0.002}
+    amp: {val: 0.002}
+    envelope: e1
     freq: {val: 12012, mod: [lfo5,n2], mod-amp: 3}
     pan: {val: -0.1}
     filters: [f4]
@@ -86,7 +88,8 @@ samplers:
     inputs: [n2]
 
   - name: s3
-    amp: {val: 0, mod: [e2], mod-amp: 1}
+    amp: {val: 1}
+    envelope: e2
     freq: {val: 44100}
     pan: {val: -0.4}
     inputs: [n4]
