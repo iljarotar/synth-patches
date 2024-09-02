@@ -1,0 +1,42 @@
+vol: 1
+out: [o1]
+
+envelopes:
+  - name: e1
+    attack: {val: 0.1}
+    decay: {val: 0.1}
+    sustain: {val: 0.8}
+    release: {val: 0.1}
+    peak: {val: 1}
+    sustain-level: {val: 0.4}
+    bpm: {val: 6}
+    time-shift: 5
+
+filters:
+  - name: f1
+    low-cutoff: {val: 900}
+    high-cutoff: {val: 1500}
+
+noises:
+  - name: n1
+    amp: {val: 1}
+
+oscillators:
+  - name: o1
+    type: Triangle
+    amp: {val: 0.1}
+    freq: {val: 800, mod: [n1,s1,s2], mod-amp: 400}
+    envelope: e1
+    pan: {val: -0.1}
+    filters: [f1]
+
+samplers:
+  - name: s1
+    freq: {val: 80}
+    amp: {val: 0.3}
+    inputs: [n1]
+
+  - name: s2
+    freq: {val: 0.1}
+    amp: {val: 2}
+    inputs: [n1]
