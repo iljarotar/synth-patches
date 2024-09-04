@@ -6,7 +6,7 @@ envelopes:
     attack: {val: 0.1}
     decay: {val: 0.1}
     sustain: {val: 0.6, mod: [s3], mod-amp: 0.5}
-    release: {val: 0.1}
+    release: {val: 1}
     peak: {val: 1}
     sustain-level: {val: 0.4}
     bpm: {val: 6, mod: [s2,s3], mod-amp: 3}
@@ -52,7 +52,7 @@ noises:
     amp: {val: 1}
 
   - name: n3
-    amp: {val: 0.4}
+    amp: {val: 0.6}
     filters: [f3]
     envelope: e3
 
@@ -67,7 +67,7 @@ oscillators:
 
   - name: o2
     type: Sawtooth
-    amp: {val: 0.008, mod: [lfo1,s3], mod-amp: 0.003}
+    amp: {val: 0.02, mod: [lfo1,s3], mod-amp: 0.01}
     freq: {val: 300, mod: [s4], mod-amp: 200}
     pan: {val: 0.2}
     filters: [f2]
