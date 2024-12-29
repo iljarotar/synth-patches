@@ -1,0 +1,53 @@
+# vol:
+# out: []
+# time:
+
+# envelopes:
+#   - name:
+#     attack: {}
+#     decay: {}
+#     sustain: {}
+#     release: {}
+#     peak: {}
+#     sustain-level: {}
+#     bpm: {}
+
+# filters:
+#   - name:
+#     low-cutoff: {}
+#     high-cutoff: {}
+
+# oscillators:
+#   - name:
+#     type:
+#     freq: {}
+#     amp: {}
+#     phase: {}
+#     pan: {}
+#     filters: []
+#     envelope:
+
+# noises:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     filters: []
+#     envelope:
+
+# samplers:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     freq: {}
+#     filters: []
+#     inputs: []
+#     envelope:
+
+# wavetables:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     freq: {}
+#     table: []
+#     filters: []
+#     envelope:
