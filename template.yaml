@@ -11,6 +11,7 @@
 #     peak: {}
 #     sustain-level: {}
 #     bpm: {}
+#     time-shift:
 
 # filters:
 #   - name:
