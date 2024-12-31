@@ -1,0 +1,93 @@
+vol: 1
+out: [o1, o2, o3, o4, o5]
+
+envelopes:
+  - name: e1
+    attack: {val: 0.1}
+    decay: {val: 0.04}
+    sustain: {val: 0.2}
+    release: {val: 2.6}
+    peak: {val: 1}
+    sustain-level: {val: 0.2}
+    time-shift: 3
+    bpm: {val: 2.5}
+
+  - name: e2
+    attack: {val: 0.1}
+    decay: {val: 0.04}
+    sustain: {val: 0.2}
+    release: {val: 2.6}
+    peak: {val: 1}
+    sustain-level: {val: 0.2}
+    time-shift: 8
+    bpm: {val: 2}
+
+  - name: e3
+    attack: {val: 0.1}
+    decay: {val: 0.04}
+    sustain: {val: 0.2}
+    release: {val: 2.6}
+    peak: {val: 1}
+    sustain-level: {val: 0.2}
+    time-shift: 13
+    bpm: {val: 2.4}
+
+  - name: e4
+    attack: {val: 0.1}
+    decay: {val: 0.04}
+    sustain: {val: 0.2}
+    release: {val: 2.6}
+    peak: {val: 1}
+    sustain-level: {val: 0.2}
+    time-shift: 20
+    bpm: {val: 2.2}
+
+  - name: e5
+    attack: {val: 0.1}
+    decay: {val: 0.04}
+    sustain: {val: 0.2}
+    release: {val: 2}
+    peak: {val: 1}
+    sustain-level: {val: 0.2}
+    time-shift: 25
+    bpm: {val: 2.7}
+
+filters:
+  - name: f1
+    low-cutoff: {val: 2000}
+
+oscillators:
+  - name: o1
+    type: Triangle
+    freq: {val: 1108.731}
+    amp: {val: 0.1}
+    envelope: e1
+    filters: [f1]
+
+  - name: o2
+    type: Triangle
+    freq: {val: 1318.510}
+    amp: {val: 0.1}
+    envelope: e2
+    filters: [f1]
+
+  - name: o3
+    type: Triangle
+    freq: {val: 1174.659}
+    amp: {val: 0.1}
+    envelope: e3
+    filters: [f1]
+
+  - name: o4
+    type: Triangle
+    freq: {val: 783.991}
+    amp: {val: 0.1}
+    envelope: e4
+    filters: [f1]
+
+  - name: o5
+    type: Triangle
+    freq: {val: 1479.978}
+    amp: {val: 0.1}
+    envelope: e5
+    filters: [f1]

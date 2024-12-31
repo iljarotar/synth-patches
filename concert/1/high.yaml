@@ -1,0 +1,14 @@
+vol: 1
+out: [o1]
+
+filters:
+  - name: f1
+    low-cutoff: {val: 2000}
+
+oscillators:
+  - name: o1
+    type: Square
+    freq: {val: 1174.659}
+    amp: {val: 0.1}
+    envelope: e3
+    filters: [f1]

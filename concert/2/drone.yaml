@@ -1,0 +1,53 @@
+vol: 1
+out: [o1, n1, n2]
+
+envelopes:
+  - name: e1
+    attack: {val: 0.1}
+    decay: {val: 0.2}
+    sustain: {val: 2}
+    release: {val: 10}
+    peak: {val: 1}
+    sustain-level: {val: 0.4}
+    bpm: {val: 1.5}
+    time-shift: 20
+
+filters:
+  - name: f1
+    low-cutoff: {val: 246}
+    high-cutoff: {val: 247.5}
+
+  - name: f2
+    low-cutoff: {val: 293}
+    high-cutoff: {val: 294}
+
+oscillators:
+  - name: o1
+    type: Sine
+    freq: {val: 61.735, mod: [lfo3], mod-amp: 2}
+    amp: {val: 0.08, mod: [lfo1, n1], mod-amp: 0.08}
+    envelope: e1
+
+  - name: lfo1
+    type: Sine
+    freq: {val: 7, mod: [lfo2], mod-amp: 2}
+    amp: {val: 0.3}
+
+  - name: lfo2
+    type: Sine
+    freq: {val: 0.3}
+    amp: {val: 1}
+
+  - name: lfo3
+    type: Sine
+    freq: {val: 1}
+    amp: {val: 1}
+
+noises:
+  - name: n1
+    amp: {val: 1.5}
+    filters: [f1]
+
+  - name: n2
+    amp: {val: 1.5}
+    filters: [f2]

@@ -1,0 +1,27 @@
+vol: 0.7
+out: [n1]
+
+filters:
+  - name: f1
+    low-cutoff: {val: 270}
+    high-cutoff: {val: 300}
+
+oscillators:
+  - name: lfo1
+    type: Sine
+    freq: {val: 0.03}
+    amp: {val: 1}
+
+noises:
+  - name: n0
+    amp: {val: 1}
+
+  - name: n1
+    amp: {val: 0.6, mod: [lfo1, s1], mod-amp: 0.3}
+    filters: [f1]
+
+samplers:
+  - name: s1
+    amp: {val: 0.2}
+    freq: {val: 44100}
+    inputs: [n0]
