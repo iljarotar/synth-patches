@@ -23,7 +23,7 @@
 #     type:
 #     freq: {}
 #     amp: {}
-#     phase: {}
+#     phase:
 #     pan: {}
 #     filters: []
 #     envelope:
