@@ -1,0 +1,30 @@
+vol: 0.7
+out: [n1, n2]
+
+filters:
+  - name: f1
+    high-cutoff: {val: 500}
+
+  - name: f2
+    low-cutoff: {val: 1000}
+    high-cutoff: {val: 3000}
+
+oscillators:
+  - name: o1
+    type: Sine
+    freq: {val: 0.06}
+    amp: {val: 1}
+
+  - name: o2
+    type: Sine
+    freq: {val: 0.2}
+    amp: {val: 1}
+
+noises:
+  - name: n1
+    amp: {val: 0.05, mod: [o1], mod-amp: 0.035}
+    filters: [f1]
+
+  - name: n2
+    amp: {val: 0.04, mod: [o2], mod-amp: 0.02}
+    filters: [f2]

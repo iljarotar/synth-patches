@@ -1,0 +1,130 @@
+vol: 0.04
+out: [o1, o2, o3, o4, o5]
+# time:
+
+envelopes:
+  - name: e1
+    attack: {val: 0.2}
+    decay: {val: 0.3}
+    sustain: {val: 1.2}
+    release: {val: 4}
+    peak: {val: 1}
+    sustain-level: {val: 0.7}
+    bpm: {val: 2}
+    time-shift: 0
+
+  - name: e2
+    attack: {val: 0.2}
+    decay: {val: 0.3}
+    sustain: {val: 1.2}
+    release: {val: 4}
+    peak: {val: 1}
+    sustain-level: {val: 0.7}
+    bpm: {val: 2}
+    time-shift: 6
+
+  - name: e3
+    attack: {val: 0.2}
+    decay: {val: 0.3}
+    sustain: {val: 1.2}
+    release: {val: 4}
+    peak: {val: 1}
+    sustain-level: {val: 0.7}
+    bpm: {val: 2}
+    time-shift: 12
+
+  - name: e4
+    attack: {val: 0.2}
+    decay: {val: 0.3}
+    sustain: {val: 1.2}
+    release: {val: 4}
+    peak: {val: 1}
+    sustain-level: {val: 0.7}
+    bpm: {val: 2}
+    time-shift: 18
+
+  - name: e5
+    attack: {val: 0.2}
+    decay: {val: 0.3}
+    sustain: {val: 1.2}
+    release: {val: 4}
+    peak: {val: 1}
+    sustain-level: {val: 0.7}
+    bpm: {val: 2}
+    time-shift: 24
+
+# filters:
+#   - name:
+#     low-cutoff: {}
+#     high-cutoff: {}
+
+oscillators:
+  - name: o1
+    type: Sawtooth
+    freq: {val: 87.307}
+    amp: {val: 1}
+    phase:
+    pan: {}
+    filters: []
+    envelope: e1
+
+  - name: o2
+    type: Sawtooth
+    freq: {val: 73.416}
+    amp: {val: 1}
+    phase:
+    pan: {}
+    filters: []
+    envelope: e2
+
+  - name: o3
+    type: Sawtooth
+    freq: {val: 97.999}
+    amp: {val: 1}
+    phase:
+    pan: {}
+    filters: []
+    envelope: e3
+
+  - name: o4
+    type: Sawtooth
+    freq: {val: 51.913}
+    amp: {val: 1}
+    phase:
+    pan: {}
+    filters: []
+    envelope: e4
+
+  - name: o5
+    type: Sawtooth
+    freq: {val: 82.407}
+    amp: {val: 1}
+    phase:
+    pan: {}
+    filters: []
+    envelope: e5
+
+# noises:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     filters: []
+#     envelope:
+
+# samplers:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     freq: {}
+#     filters: []
+#     inputs: []
+#     envelope:
+
+# wavetables:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     freq: {}
+#     table: []
+#     filters: []
+#     envelope:

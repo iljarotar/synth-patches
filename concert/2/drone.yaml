@@ -1,4 +1,4 @@
-vol: 1
+vol: 2
 out: [o1, n1, n2]
 
 envelopes:
@@ -25,7 +25,7 @@ oscillators:
   - name: o1
     type: Sine
     freq: {val: 61.735, mod: [lfo3], mod-amp: 2}
-    amp: {val: 0.08, mod: [lfo1, n1], mod-amp: 0.08}
+    amp: {val: 0.15, mod: [lfo1, n1], mod-amp: 0.15}
     envelope: e1
 
   - name: lfo1
@@ -45,9 +45,9 @@ oscillators:
 
 noises:
   - name: n1
-    amp: {val: 1.5}
+    amp: {val: 2}
     filters: [f1]
 
   - name: n2
-    amp: {val: 1.5}
+    amp: {val: 2}
     filters: [f2]

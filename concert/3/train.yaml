@@ -1,0 +1,83 @@
+vol: 0.6
+out: [n1, n3]
+# time:
+
+# envelopes:
+#   - name:
+#     attack: {}
+#     decay: {}
+#     sustain: {}
+#     release: {}
+#     peak: {}
+#     sustain-level: {}
+#     bpm: {}
+#     time-shift:
+
+filters:
+  - name: f1
+    low-cutoff: {val: 50, mod: [o4], mod-amp: 20}
+    high-cutoff: {val: 650, mod: [o4], mod-amp: 100}
+
+  - name: f2
+    high-cutoff: {val: 800, mod: [o4], mod-amp: 200}
+
+  - name: f3
+    low-cutoff: {val: 19000, mod: [o4], mod-amp: 400}
+
+oscillators:
+  - name: o1
+    type: Sine
+    freq: {val: 1.5, mod: [o4], mod-amp: 0.375}
+    amp: {val: 1}
+    phase: 0.75
+    pan: {}
+    filters: []
+    envelope:
+
+  - name: o2
+    type: Sine
+    freq: {val: 4.5, mod: [o4], mod-amp: 1.125}
+    amp: {val: 0.7}
+
+  - name: o3
+    type: Sine
+    freq: {val: 6, mod: [o4], mod-amp: 1.5}
+    amp: {val: 0.8}
+
+  - name: o4
+    type: Sine
+    freq: {val: 0.01}
+    amp: {val: 1}
+
+noises:
+  - name: n1
+    amp: {val: 0.05, mod: [o1, o2, n2], mod-amp: 0.04}
+    pan: {}
+    filters: [f1]
+    envelope:
+
+  - name: n2
+    amp: {val: 0.7, mod: [o1, o2], mod-amp: 0.3}
+    filters: [f2]
+
+  - name: n3
+    amp: {val: 0.5, mod: [o1, o3], mod-amp: 0.4}
+    filters: [f3]
+
+# samplers:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     freq: {}
+#     filters: []
+#     inputs: []
+#     envelope:
+
+# wavetables:
+#   - name:
+#     amp: {}
+#     pan: {}
+#     freq: {}
+#     table: []
+#     filters: []
+#     envelope:
