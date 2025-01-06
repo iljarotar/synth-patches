@@ -1,0 +1,50 @@
+vol: 0.02
+out: [o1, o2]
+oscillators:
+  - name: o1
+    type: Sawtooth
+    freq: {val: 800, mod: [t1], mod-amp: 700}
+    amp: {val: 0, mod: [e1, l2], mod-amp: 0.01}
+
+  - name: o2
+    type: ReverseSawtooth
+    freq: {val: 200, mod: [t2], mod-amp: 100}
+    amp: {val: 0, mod: [e1, l1], mod-amp: 0.1}
+
+  - name: l1
+    type: Sine
+    freq: {val: 0.07}
+    amp: {val: 0.7}
+
+  - name: l2
+    type: Sine
+    freq: {val: 0.16}
+    amp: {val: 0.5}
+
+text-processors:
+  - name: t1
+    amp: {val: 1}
+    bpm: {val: 500}
+    text: Sex serves several biological and psychological purposes. It's a fundamental aspect of human reproduction, allowing for the creation of new life. Beyond reproduction, sex can also have emotional, social, and health-related benefits. It can strengthen emotional bonds between partners, promote intimacy and connection, and contribute to overall well-being. Additionally, engaging in sexual activity can release endorphins, which are natural mood enhancers.
+
+  - name: t2
+    amp: {val: 1}
+    bpm: {val: 800}
+    text: In a metaphorical or symbolic sense, people often use the idea of a stone carrying memories or emotions. However, from a scientific perspective, stones themselves do not have the ability to store memories or emotions.
+
+envelopes:
+  - name: e1
+    attack: {val: 0.02}
+    decay: {val: 0.08}
+    sustain: {val: 0.08}
+    release: {val: 0.1}
+    sustain-level: {val: 0.01}
+    peak: {val: 1}
+    threshold: {val: 0.5}
+    triggers: [c1]
+
+custom-signals:
+  - name: c1
+    freq: {val: 5}
+    amp: {val: 1}
+    data: [1, 0, -1, 0]

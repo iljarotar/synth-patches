@@ -1,0 +1,50 @@
+vol: 0.1
+out: [o1, o2, o3]
+oscillators:
+  - name: o1
+    type: Sine
+    freq: {val: 100, mod: [t1], mod-amp: 33}
+    amp: {val: 0.3, mod: [l1, l3], mod-amp: 0.3}
+
+  - name: o2
+    type: Sine
+    freq: {val: 120, mod: [t2], mod-amp: 40}
+    amp: {val: 0.2, mod: [l1, l5], mod-amp: 0.2}
+
+  - name: l1
+    type: Sine
+    freq: {val: 5.5, mod: [l2], mod-amp: 0.5}
+    amp: {val: 0.1}
+
+  - name: l2
+    type: Sine
+    freq: {val: 0.05}
+    amp: {val: 1}
+
+  - name: l3
+    type: Sine
+    freq: {val: 0.02}
+    amp: {val: 1}
+    phase: 0.75
+
+  - name: l4
+    type: Sine
+    freq: {val: 0.01}
+    amp: {val: 1}
+    phase: 0.75
+
+  - name: l5
+    type: Sine
+    freq: {val: 0.08}
+    amp: {val: 1}
+
+text-processors:
+  - name: t1
+    bpm: {val: 25}
+    amp: {val: 1}
+    text: Love can influence how individuals approach problem-solving. Love often leads to increased empathy and a greater understanding of others. Love can encourage critical thinking. Love can motivate individuals to learn and grow.
+
+  - name: t2
+    bpm: {val: 31}
+    amp: {val: 1}
+    text: Many creative people draw inspiration from their emotions, including feelings of love. Engaging in deep conversations and discussions with a loved one can stimulate intellectual growth.
