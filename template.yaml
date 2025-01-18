@@ -2,17 +2,6 @@
 # out: []
 # time:
 
-# envelopes:
-#   - name:
-#     attack: {}
-#     decay: {}
-#     sustain: {}
-#     release: {}
-#     peak: {}
-#     sustain-level: {}
-#     bpm: {}
-#     time-shift:
-
 # filters:
 #   - name:
 #     low-cutoff: {}
@@ -20,13 +9,21 @@
 
 # oscillators:
 #   - name:
+#     amp: {}
 #     type:
 #     freq: {}
-#     amp: {}
 #     phase:
 #     pan: {}
 #     filters: []
 #     envelope:
+#        attack: {}
+#        decay: {}
+#        sustain: {}
+#        release: {}
+#        peak: {}
+#        sustain-level: {}
+#        bpm: {}
+#        time-shift:
 
 # noises:
 #   - name:
@@ -34,6 +31,14 @@
 #     pan: {}
 #     filters: []
 #     envelope:
+#        attack: {}
+#        decay: {}
+#        sustain: {}
+#        release: {}
+#        peak: {}
+#        sustain-level: {}
+#        bpm: {}
+#        time-shift:
 
 # samplers:
 #   - name:
@@ -43,6 +48,34 @@
 #     filters: []
 #     inputs: []
 #     envelope:
+#        attack: {}
+#        decay: {}
+#        sustain: {}
+#        release: {}
+#        peak: {}
+#        sustain-level: {}
+#        bpm: {}
+#        time-shift:
+
+# sequences:
+#   - name:
+#     amp: {}
+#     type:
+#     sequence: []
+#     pan: {}
+#     filters: []
+#     pitch: {}
+#     transpose: {}
+#     randomize:
+#     envelope:
+#        attack: {}
+#        decay: {}
+#        sustain: {}
+#        release: {}
+#        peak: {}
+#        sustain-level: {}
+#        bpm: {}
+#        time-shift:
 
 # wavetables:
 #   - name:
@@ -52,3 +85,11 @@
 #     table: []
 #     filters: []
 #     envelope:
+#        attack: {}
+#        decay: {}
+#        sustain: {}
+#        release: {}
+#        peak: {}
+#        sustain-level: {}
+#        bpm: {}
+#        time-shift:
