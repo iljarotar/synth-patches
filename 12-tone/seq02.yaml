@@ -1,0 +1,94 @@
+vol: 0
+out: [seq1]
+# time: 0
+
+# filters:
+#   - name: ""
+#     low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+#     high-cutoff: { val: 0, mod: [], mod-amp: 0 }
+
+# oscillators:
+#   - name: ""
+#     amp: { val: 0, mod: [], mod-amp: 0 }
+#     type: ""
+#     freq: { val: 0, mod: [], mod-amp: 0 }
+#     phase: 0
+#     pan: { val: 0, mod: [], mod-amp: 0 }
+#     filters: []
+#     envelope:
+#        attack: { val: 0, mod: [], mod-amp: 0 }
+#        decay: { val: 0, mod: [], mod-amp: 0 }
+#        sustain: { val: 0, mod: [], mod-amp: 0 }
+#        release: { val: 0, mod: [], mod-amp: 0 }
+#        peak: { val: 0, mod: [], mod-amp: 0 }
+#        sustain-level: { val: 0, mod: [], mod-amp: 0 }
+#        bpm: { val: 0, mod: [], mod-amp: 0 }
+#        delay: 0
+
+# noises:
+#   - name: ""
+#     amp: { val: 0, mod: [], mod-amp: 0 }
+#     pan: { val: 0, mod: [], mod-amp: 0 }
+#     filters: []
+#     envelope:
+#        attack: { val: 0, mod: [], mod-amp: 0 }
+#        decay: { val: 0, mod: [], mod-amp: 0 }
+#        sustain: { val: 0, mod: [], mod-amp: 0 }
+#        release: { val: 0, mod: [], mod-amp: 0 }
+#        peak: { val: 0, mod: [], mod-amp: 0 }
+#        sustain-level: { val: 0, mod: [], mod-amp: 0 }
+#        bpm: { val: 0, mod: [], mod-amp: 0 }
+#        delay: 0
+
+# samplers:
+#   - name: ""
+#     amp: { val: 0, mod: [], mod-amp: 0 }
+#     pan: { val: 0, mod: [], mod-amp: 0 }
+#     freq: { val: 0, mod: [], mod-amp: 0 }
+#     filters: []
+#     inputs: []
+#     envelope:
+#        attack: { val: 0, mod: [], mod-amp: 0 }
+#        decay: { val: 0, mod: [], mod-amp: 0 }
+#        sustain: { val: 0, mod: [], mod-amp: 0 }
+#        release: { val: 0, mod: [], mod-amp: 0 }
+#        peak: { val: 0, mod: [], mod-amp: 0 }
+#        sustain-level: { val: 0, mod: [], mod-amp: 0 }
+#        bpm: { val: 0, mod: [], mod-amp: 0 }
+#        delay: 0
+
+sequences:
+  - name: "seq1"
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: "Sine"
+    sequence: [f_3, a_3, f#_3, d_4, g#_3, d#_4, e_3, a#_3, g_3, c_4, c#_4, b_3]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: []
+    pitch: 440
+    transpose: { val: 5, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.05, mod: [], mod-amp: 0 }
+      decay: { val: 0.05, mod: [], mod-amp: 0 }
+      sustain: { val: 0.1, mod: [], mod-amp: 0 }
+      release: { val: 0.2, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.3, mod: [], mod-amp: 0 }
+      bpm: { val: 110, mod: [], mod-amp: 0 }
+      delay: 0
+# wavetables:
+#   - name: ""
+#     amp: { val: 0, mod: [], mod-amp: 0 }
+#     pan: { val: 0, mod: [], mod-amp: 0 }
+#     freq: { val: 0, mod: [], mod-amp: 0 }
+#     table: []
+#     filters: []
+#     envelope:
+#        attack: { val: 0, mod: [], mod-amp: 0 }
+#        decay: { val: 0, mod: [], mod-amp: 0 }
+#        sustain: { val: 0, mod: [], mod-amp: 0 }
+#        release: { val: 0, mod: [], mod-amp: 0 }
+#        peak: { val: 0, mod: [], mod-amp: 0 }
+#        sustain-level: { val: 0, mod: [], mod-amp: 0 }
+#        bpm: { val: 0, mod: [], mod-amp: 0 }
+#        delay: 0
