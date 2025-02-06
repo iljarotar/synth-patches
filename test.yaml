@@ -1,0 +1,11 @@
+vol: 1
+out: [o1]
+
+oscillators:
+  - name: "o1"
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: "Sine"
+    freq: { val: 440, mod: [], mod-amp: 0 }
+    phase: 0
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: []
