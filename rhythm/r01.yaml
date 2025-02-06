@@ -1,0 +1,65 @@
+vol: 0.2
+out: [seq1, seq2, seq3]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 700, mod: [], mod-amp: 0 }
+
+sequences:
+  - name: seq1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence: [e_2]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.05, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.2, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 120, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: seq2
+    amp: { val: 0.7, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence: [c_2]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.05, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.2, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 120, mod: [], mod-amp: 0 }
+      delay: 0.25
+
+  - name: seq3
+    amp: { val: 0.7, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence: [c_2]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.05, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.2, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 120, mod: [], mod-amp: 0 }
+      delay: 0.375

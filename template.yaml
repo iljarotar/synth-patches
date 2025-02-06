@@ -3,14 +3,14 @@
 # time: 0
 
 # filters:
-#   - name: ""
+#   - name:
 #     low-cutoff: { val: 0, mod: [], mod-amp: 0 }
 #     high-cutoff: { val: 0, mod: [], mod-amp: 0 }
 
 # oscillators:
-#   - name: ""
+#   - name:
 #     amp: { val: 0, mod: [], mod-amp: 0 }
-#     type: ""
+#     type:
 #     freq: { val: 0, mod: [], mod-amp: 0 }
 #     phase: 0
 #     pan: { val: 0, mod: [], mod-amp: 0 }
@@ -26,7 +26,7 @@
 #        delay: 0
 
 # noises:
-#   - name: ""
+#   - name:
 #     amp: { val: 0, mod: [], mod-amp: 0 }
 #     pan: { val: 0, mod: [], mod-amp: 0 }
 #     filters: []
@@ -41,7 +41,7 @@
 #        delay: 0
 
 # samplers:
-#   - name: ""
+#   - name:
 #     amp: { val: 0, mod: [], mod-amp: 0 }
 #     pan: { val: 0, mod: [], mod-amp: 0 }
 #     freq: { val: 0, mod: [], mod-amp: 0 }
@@ -58,9 +58,9 @@
 #        delay: 0
 
 # sequences:
-#   - name: ""
+#   - name:
 #     amp: { val: 0, mod: [], mod-amp: 0 }
-#     type: ""
+#     type:
 #     sequence: []
 #     pan: { val: 0, mod: [], mod-amp: 0 }
 #     filters: []
@@ -78,7 +78,7 @@
 #        delay: 0
 
 # wavetables:
-#   - name: ""
+#   - name:
 #     amp: { val: 0, mod: [], mod-amp: 0 }
 #     pan: { val: 0, mod: [], mod-amp: 0 }
 #     freq: { val: 0, mod: [], mod-amp: 0 }

@@ -2,9 +2,9 @@ vol: 0
 out: [seq1]
 
 sequences:
-  - name: "seq1"
+  - name: seq1
     amp: { val: 1, mod: [], mod-amp: 0 }
-    type: "Sine"
+    type: Sine
     sequence:
       - b_2
       - c#_3

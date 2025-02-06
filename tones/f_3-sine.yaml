@@ -2,18 +2,18 @@ vol: 1
 out: [seq1]
 
 oscillators:
-  - name: "lfo1"
+  - name: lfo1
     amp: { val: 1, mod: [], mod-amp: 0 }
-    type: "Sine"
+    type: Sine
     freq: { val: 6, mod: [], mod-amp: 0 }
     phase: 0
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: []
 
 sequences:
-  - name: "seq1"
+  - name: seq1
     amp: { val: 0.8, mod: [lfo1], mod-amp: 0.1 }
-    type: "Sine"
+    type: Sine
     sequence: [f_3]
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: []

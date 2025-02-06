@@ -1,11 +1,37 @@
 vol: 1
-out: [o1]
+out: [o1, o2]
 
 oscillators:
-  - name: "o1"
+  - name: o1
     amp: { val: 1, mod: [], mod-amp: 0 }
-    type: "Sine"
+    type: Sine
     freq: { val: 440, mod: [], mod-amp: 0 }
     phase: 0
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: []
+    envelope:
+      attack: { val: 0.05, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.2, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 120, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: o2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 440, mod: [], mod-amp: 0 }
+    phase: 0
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: []
+    envelope:
+      attack: { val: 0.05, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.2, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 120, mod: [], mod-amp: 0 }
+      delay: 0.25
