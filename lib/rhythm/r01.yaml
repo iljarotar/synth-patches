@@ -1,4 +1,4 @@
-vol: 0.2
+vol: 1
 out: [seq1, n1]
 
 filters:
@@ -27,7 +27,7 @@ noises:
 
 sequences:
   - name: seq1
-    amp: { val: 1, mod: [], mod-amp: 0 }
+    amp: { val: 0.4, mod: [], mod-amp: 0 }
     type: Sawtooth
     sequence: [e_2, n, f_2, f_2, e_1, n, g#_3, bb_3]
     pan: { val: 0, mod: [], mod-amp: 0 }

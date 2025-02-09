@@ -1,0 +1,76 @@
+vol: 1
+out: [seq1, seq2]
+
+filters:
+  - name: f1
+    high-cutoff: { val: 300 }
+
+sequences:
+  - name: seq1
+    amp: { val: 0.5, mod: [], mod-amp: 0 }
+    type: Sine
+    sequence:
+      - b_2
+      - c#_3
+      - n
+      - g_2
+      - c_3
+      - a_2
+      - f#_2
+      - n
+      - d#_3
+      - e_2
+      - f_2
+      - g#_2
+      - n
+      - d_3
+      - a#_2
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: []
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.1, mod: [], mod-amp: 0 }
+      decay: { val: 0.1, mod: [], mod-amp: 0 }
+      sustain: { val: 0.4, mod: [], mod-amp: 0 }
+      release: { val: 0.4, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.3, mod: [], mod-amp: 0 }
+      bpm: { val: 60, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: seq2
+    amp: { val: 0.2, mod: [], mod-amp: 0 }
+    type: Triangle
+    sequence:
+      - b_2
+      - c#_3
+      - g_2
+      - n
+      - c_3
+      - a_2
+      - f#_2
+      - d#_3
+      - e_2
+      - n
+      - f_2
+      - n
+      - g#_2
+      - d_3
+      - n
+      - a#_2
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 13, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.1, mod: [], mod-amp: 0 }
+      decay: { val: 0.1, mod: [], mod-amp: 0 }
+      sustain: { val: 0.1, mod: [], mod-amp: 0 }
+      release: { val: 0.1, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.3, mod: [], mod-amp: 0 }
+      bpm: { val: 80, mod: [], mod-amp: 0 }
+      delay: 0
