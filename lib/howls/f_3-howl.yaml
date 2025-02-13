@@ -1,0 +1,13 @@
+vol: 0
+out: [n1]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 172, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 176, mod: [], mod-amp: 0 }
+
+noises:
+  - name: n1
+    amp: { val: 2, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]

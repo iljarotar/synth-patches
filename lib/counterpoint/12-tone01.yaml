@@ -1,4 +1,4 @@
-vol: 1
+vol: 0
 out: [seq1, seq2]
 
 filters:
@@ -8,7 +8,7 @@ filters:
 sequences:
   - name: seq1
     amp: { val: 0.5, mod: [], mod-amp: 0 }
-    type: Sine
+    type: Triangle
     sequence:
       - b_2
       - c#_3
@@ -26,7 +26,7 @@ sequences:
       - d_3
       - a#_2
     pan: { val: 0, mod: [], mod-amp: 0 }
-    filters: []
+    filters: [f1]
     pitch: 440
     transpose: { val: 0, mod: [], mod-amp: 0 }
     randomize: false

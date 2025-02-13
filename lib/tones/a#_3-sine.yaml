@@ -14,7 +14,7 @@ sequences:
   - name: seq1
     amp: { val: 0.8, mod: [lfo1], mod-amp: 0.1 }
     type: Sine
-    sequence: [a#_4]
+    sequence: [a#_3]
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: []
     pitch: 440

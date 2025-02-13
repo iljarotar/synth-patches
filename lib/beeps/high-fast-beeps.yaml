@@ -1,0 +1,39 @@
+vol: 0
+out: [o1]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 10000, mod: [], mod-amp: 0 }
+
+oscillators:
+  - name: o1
+    amp: { val: 0.05, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    freq: { val: 8000, mod: [s1], mod-amp: 2000 }
+    phase: 0
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    # envelope:
+    #    attack: { val: 0, mod: [], mod-amp: 0 }
+    #    decay: { val: 0, mod: [], mod-amp: 0 }
+    #    sustain: { val: 0, mod: [], mod-amp: 0 }
+    #    release: { val: 0, mod: [], mod-amp: 0 }
+    #    peak: { val: 0, mod: [], mod-amp: 0 }
+    #    sustain-level: { val: 0, mod: [], mod-amp: 0 }
+    #    bpm: { val: 0, mod: [], mod-amp: 0 }
+    #    delay: 0
+
+noises:
+  - name: n1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: []
+
+samplers:
+  - name: s1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    freq: { val: 14, mod: [], mod-amp: 0 }
+    filters: []
+    inputs: [n1]
