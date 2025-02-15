@@ -3,8 +3,8 @@ out: [n1]
 
 filters:
   - name: f1
-    low-cutoff: { val: 172, mod: [], mod-amp: 0 }
-    high-cutoff: { val: 176, mod: [], mod-amp: 0 }
+    low-cutoff: { val: 172.614, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 176.614, mod: [], mod-amp: 0 }
 
 noises:
   - name: n1
