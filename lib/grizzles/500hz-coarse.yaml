@@ -1,0 +1,38 @@
+vol: 1
+out: [n1]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 500, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 530, mod: [], mod-amp: 0 }
+
+noises:
+  - name: n1
+    amp: { val: 0.1, mod: [s1, n3], mod-amp: 0.3 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    envelope:
+      attack: { val: 0.2, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 12, mod: [], mod-amp: 0 }
+      release: { val: 1, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.95, mod: [], mod-amp: 0 }
+      bpm: { val: 1, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: n2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+
+  - name: n3
+    amp: { val: 0.6, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+
+samplers:
+  - name: s1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    freq: { val: 40, mod: [], mod-amp: 0 }
+    filters: []
+    inputs: [n2]
