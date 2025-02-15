@@ -1,0 +1,27 @@
+vol: 0
+out: [seq1]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 220, mod: [], mod-amp: 0 }
+
+oscillators:
+  - name: lfo1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 3, mod: [lfo2], mod-amp: 0.6 }
+
+  - name: lfo2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 0.03, mod: [], mod-amp: 0 }
+
+sequences:
+  - name: seq1
+    amp: { val: 0.3, mod: [lfo1], mod-amp: 0.02 }
+    type: Sawtooth
+    sequence: [b_2]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
