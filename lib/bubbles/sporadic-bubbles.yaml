@@ -1,0 +1,41 @@
+vol: 1
+out: [o1]
+
+filters:
+  - name: f1
+    high-cutoff: { val: 400, mod: [s1], mod-amp: 100 }
+
+oscillators:
+  - name: o1
+    amp: { val: 0.5, mod: [], mod-amp: 0 }
+    type: Triangle
+    freq: { val: 300, mod: [s1, lfo1], mod-amp: 100 }
+    filters: [f1]
+    envelope:
+      attack: { val: 0.01, mod: [], mod-amp: 0 }
+      decay: { val: 0.04, mod: [], mod-amp: 0 }
+      sustain: { val: 0.1, mod: [], mod-amp: 0 }
+      release: { val: 4, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.2, mod: [], mod-amp: 0 }
+      bpm: { val: 10, mod: [s2], mod-amp: 2 }
+
+  - name: lfo1
+    amp: { val: 0.015, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 4, mod: [], mod-amp: 0 }
+
+noises:
+  - name: n1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+
+samplers:
+  - name: s1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    freq: { val: 0.1666667, mod: [s2], mod-amp: 0.0333333 }
+    inputs: [n1]
+
+  - name: s2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    freq: { val: 0.1 }
+    inputs: [n1]

@@ -1,0 +1,194 @@
+vol: 0
+out: [seq1, seq2, seq3, seq4]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 600, mod: [], mod-amp: 0 }
+
+  - name: f2
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 450, mod: [], mod-amp: 0 }
+
+  - name: f3
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 300, mod: [], mod-amp: 0 }
+
+  - name: f4
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 250, mod: [], mod-amp: 0 }
+
+oscillators:
+  - name: lfo1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 4, mod: [lfo2], mod-amp: 0.3 }
+
+  - name: lfo2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 0.07, mod: [], mod-amp: 0 }
+
+sequences:
+  - name: seq1
+    amp: { val: 0.2, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence:
+      [
+        d_4,
+        d#_4,
+        e_4,
+        f_4,
+        f#_4,
+        g_4,
+        g#_4,
+        a_4,
+        a#_4,
+        b_4,
+        c_5,
+        c#_5,
+        d_5,
+        d#_5,
+        e_5,
+        f_5,
+        f#_5,
+        g_5,
+        g#_5,
+        a_5,
+      ]
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [lfo1], mod-amp: 0.2 }
+    randomize: true
+    envelope:
+      attack: { val: 0.5, mod: [], mod-amp: 0 }
+      decay: { val: 0.05, mod: [], mod-amp: 0 }
+      sustain: { val: 4, mod: [], mod-amp: 0 }
+      release: { val: 7, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.95, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
+
+  - name: seq2
+    amp: { val: 0.18, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence:
+      [
+        g_3,
+        g#_3,
+        a_3,
+        a#_3,
+        b_3,
+        c_4,
+        c#_4,
+        d_4,
+        d#_4,
+        e_4,
+        f_4,
+        f#_4,
+        g_4,
+        g#_4,
+        a_4,
+        a#_4,
+        b_4,
+        c_5,
+        c#_5,
+        d_5,
+      ]
+    filters: [f2]
+    pitch: 440
+    transpose: { val: 0, mod: [lfo1], mod-amp: 0.2 }
+    randomize: true
+    envelope:
+      attack: { val: 0.5, mod: [], mod-amp: 0 }
+      decay: { val: 0.05, mod: [], mod-amp: 0 }
+      sustain: { val: 4, mod: [], mod-amp: 0 }
+      release: { val: 7, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.95, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
+
+  - name: seq3
+    amp: { val: 0.16, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence:
+      [
+        c_3,
+        c#_3,
+        d_3,
+        d#_3,
+        e_3,
+        f_3,
+        f#_3,
+        g_3,
+        g#_3,
+        a_3,
+        a#_3,
+        b_3,
+        c_4,
+        c#_4,
+        d_4,
+        d#_4,
+        e_4,
+        f_4,
+        f#_4,
+        g_4,
+        g#_4,
+        a_4,
+      ]
+    filters: [f3]
+    pitch: 440
+    transpose: { val: 0, mod: [lfo1], mod-amp: 0.2 }
+    randomize: true
+    envelope:
+      attack: { val: 0.5, mod: [], mod-amp: 0 }
+      decay: { val: 0.05, mod: [], mod-amp: 0 }
+      sustain: { val: 4, mod: [], mod-amp: 0 }
+      release: { val: 7, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.95, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
+
+  - name: seq4
+    amp: { val: 0.14, mod: [], mod-amp: 0 }
+    type: Sawtooth
+    sequence:
+      [
+        d_2,
+        d#_2,
+        e_2,
+        f_2,
+        f#_2,
+        g_2,
+        g#_2,
+        a_2,
+        a#_2,
+        b_2,
+        c_3,
+        c#_3,
+        d_3,
+        d#_3,
+        e_3,
+        f_3,
+        f#_3,
+        g_3,
+        g#_3,
+        a_3,
+        a#_3,
+        b_3,
+        c_3,
+        c#_3,
+        d_3,
+      ]
+    filters: [f4]
+    pitch: 440
+    transpose: { val: 0, mod: [lfo1], mod-amp: 0.2 }
+    randomize: true
+    envelope:
+      attack: { val: 0.5, mod: [], mod-amp: 0 }
+      decay: { val: 0.05, mod: [], mod-amp: 0 }
+      sustain: { val: 4, mod: [], mod-amp: 0 }
+      release: { val: 7, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.95, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
