@@ -1,0 +1,50 @@
+vol: 0
+out: [seq1, seq2]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 700, mod: [], mod-amp: 0 }
+
+  - name: f2
+    low-cutoff: { val: 1050, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 1200, mod: [], mod-amp: 0 }
+
+sequences:
+  - name: seq1
+    amp: { val: 0.4, mod: [], mod-amp: 0 }
+    type: Triangle
+    sequence: [d_2, n, n, ab_2, n, n, f#_2, n, n, g_2, a_2]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.01, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.05, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 400, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: seq2
+    amp: { val: 0.2, mod: [], mod-amp: 0 }
+    type: Triangle
+    sequence: [n, f_5, n, b_5, n, bb_5, n, e_5, n, g#_5, n]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f2]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.01, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0.01, mod: [], mod-amp: 0 }
+      release: { val: 0.01, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 400, mod: [], mod-amp: 0 }
+      delay: 0

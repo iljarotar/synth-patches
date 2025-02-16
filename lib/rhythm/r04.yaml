@@ -1,0 +1,165 @@
+vol: 0
+out: [seq1, seq2, seq3]
+
+filters:
+  - name: f1
+    high-cutoff: { val: 900, mod: [], mod-amp: 0 }
+
+sequences:
+  - name: seq1
+    amp: { val: 0.4, mod: [w1], mod-amp: 0.2 }
+    type: Sawtooth
+    sequence:
+      [
+        g_3,
+        g#_3,
+        a_3,
+        a#_3,
+        b_3,
+        c_4,
+        c#_4,
+        d_4,
+        d#_4,
+        e_4,
+        f_4,
+        f#_4,
+        g_4,
+        g#_4,
+        a_4,
+        a#_4,
+        b_4,
+        c_5,
+        c#_5,
+        d_5,
+        d#_5,
+        e_5,
+        f_5,
+        f#_5,
+        g_5,
+        g#_5,
+        a_5,
+      ]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: true
+    envelope:
+      attack: { val: 1, mod: [], mod-amp: 0 }
+      decay: { val: 0, mod: [], mod-amp: 0 }
+      sustain: { val: 5, mod: [], mod-amp: 0 }
+      release: { val: 7, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 1, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: seq2
+    amp: { val: 0.3, mod: [w1], mod-amp: 0.2 }
+    type: Sawtooth
+    sequence:
+      [
+        g_3,
+        g#_3,
+        a_3,
+        a#_3,
+        b_3,
+        c_4,
+        c#_4,
+        d_4,
+        d#_4,
+        e_4,
+        f_4,
+        f#_4,
+        g_4,
+        g#_4,
+        a_4,
+        a#_4,
+        b_4,
+        c_5,
+        c#_5,
+        d_5,
+        d#_5,
+        e_5,
+        f_5,
+        f#_5,
+        g_5,
+        g#_5,
+        a_5,
+      ]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: true
+    envelope:
+      attack: { val: 1, mod: [], mod-amp: 0 }
+      decay: { val: 0, mod: [], mod-amp: 0 }
+      sustain: { val: 5, mod: [], mod-amp: 0 }
+      release: { val: 7, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 1, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: seq3
+    amp: { val: 0.2, mod: [w1], mod-amp: 0.2 }
+    type: Sawtooth
+    sequence:
+      [
+        g_3,
+        g#_3,
+        a_3,
+        a#_3,
+        b_3,
+        c_4,
+        c#_4,
+        d_4,
+        d#_4,
+        e_4,
+        f_4,
+        f#_4,
+        g_4,
+        g#_4,
+        a_4,
+        a#_4,
+        b_4,
+        c_5,
+        c#_5,
+        d_5,
+        d#_5,
+        e_5,
+        f_5,
+        f#_5,
+        g_5,
+        g#_5,
+        a_5,
+      ]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: true
+    envelope:
+      attack: { val: 1, mod: [], mod-amp: 0 }
+      decay: { val: 0, mod: [], mod-amp: 0 }
+      sustain: { val: 5, mod: [], mod-amp: 0 }
+      release: { val: 5.5, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 1, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [], mod-amp: 0 }
+      delay: 0
+
+wavetables:
+  - name: w1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    freq: { val: 6, mod: [], mod-amp: 0 }
+    table: [1, 0]
+    envelope:
+      attack: { val: 0.01, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0.01, mod: [], mod-amp: 0 }
+      release: { val: 0.12, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.5, mod: [], mod-amp: 0 }
+      bpm: { val: 360, mod: [], mod-amp: 0 }

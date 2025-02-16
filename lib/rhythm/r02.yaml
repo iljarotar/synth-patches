@@ -7,12 +7,12 @@ filters:
     high-cutoff: { val: 800, mod: [], mod-amp: 0 }
 
   - name: f2
-    low-cutoff: { val: 4000, mod: [], mod-amp: 0 }
-    high-cutoff: { val: 9000, mod: [], mod-amp: 0 }
+    low-cutoff: { val: 4000, mod: [], mod-amp: -1000 }
+    high-cutoff: { val: 6000, mod: [], mod-amp: 3000 }
 
 noises:
   - name: n1
-    amp: { val: 0.4, mod: [w1], mod-amp: 0.15 }
+    amp: { val: 0.2, mod: [w1], mod-amp: 0.3 }
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: [f2]
     envelope:
@@ -28,7 +28,7 @@ noises:
 sequences:
   - name: seq1
     amp: { val: 0.5, mod: [], mod-amp: 0 }
-    type: Square
+    type: Sawtooth
     sequence:
       - f_2
       - f#_2
