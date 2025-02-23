@@ -6,26 +6,32 @@ oscillators:
     amp: { val: 1, mod: [], mod-amp: 0 }
     type: Sine
     freq: { val: 6, mod: [], mod-amp: 0 }
-    phase: 0
-    pan: { val: 0, mod: [], mod-amp: 0 }
-    filters: []
 
 sequences:
   - name: seq1
-    amp: { val: 0.8, mod: [lfo1], mod-amp: 0.1 }
+    amp: { val: 1, mod: [], mod-amp: 0 }
     type: Sine
-    sequence: [a_4]
+    sequence: [g_4]
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: []
     pitch: 440
     transpose: { val: 0, mod: [lfo1], mod-amp: 0.1 }
     randomize: false
     envelope:
-      attack: { val: 0.03, mod: [], mod-amp: 0 }
-      decay: { val: 0.02, mod: [], mod-amp: 0 }
+      attack: { val: 0.01, mod: [], mod-amp: 0 }
+      decay: { val: 0.04, mod: [], mod-amp: 0 }
       sustain: { val: 0.1, mod: [], mod-amp: 0 }
-      release: { val: 10, mod: [], mod-amp: 0 }
+      release: { val: 0.1, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.2, mod: [], mod-amp: 0 }
-      bpm: { val: 3, mod: [], mod-amp: 0 }
-      delay: 0
+      bpm: { val: 3, mod: [s1], mod-amp: 0 }
+
+noises:
+  - name: n1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+
+samplers:
+  - name: s1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    freq: { val: 0.1 }
+    inputs: [n1]
