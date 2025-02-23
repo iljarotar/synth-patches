@@ -7,7 +7,7 @@ filters:
 
 oscillators:
   - name: lfo1
-    amp: { val: 0.015, mod: [], mod-amp: 0 }
+    amp: { val: 1, mod: [], mod-amp: 0 }
     type: Sine
     freq: { val: 4, mod: [], mod-amp: 0 }
 
@@ -28,7 +28,7 @@ samplers:
 
 sequences:
   - name: seq1
-    amp: { val: 0.2, mod: [w1], mod-amp: 0.2 }
+    amp: { val: 0.7, mod: [lfo1], mod-amp: 0.3 }
     type: Triangle
     sequence:
       [
