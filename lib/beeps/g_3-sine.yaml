@@ -24,7 +24,7 @@ sequences:
       release: { val: 0.1, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.2, mod: [], mod-amp: 0 }
-      bpm: { val: 3, mod: [s1], mod-amp: 0 }
+      bpm: { val: 3, mod: [s1], mod-amp: 1 }
 
 noises:
   - name: n1
