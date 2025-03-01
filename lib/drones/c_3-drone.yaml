@@ -20,7 +20,7 @@ oscillators:
   - name: lfo3
     amp: { val: 1, mod: [], mod-amp: 0 }
     type: Sine
-    freq: { val: 0.1, mod: [], mod-amp: 0 }
+    freq: { val: 0.05, mod: [lfo2], mod-amp: 0.02 }
 
 sequences:
   - name: seq1
