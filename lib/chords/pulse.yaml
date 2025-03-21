@@ -3,6 +3,10 @@ out: [seq1, seq2, seq3]
 
 filters:
   - name: f1
+    high-cutoff: { val: 600, mod: [], mod-amp: 0 }
+  - name: f2
+    high-cutoff: { val: 750, mod: [], mod-amp: 0 }
+  - name: f3
     high-cutoff: { val: 900, mod: [], mod-amp: 0 }
 
 sequences:
@@ -11,6 +15,13 @@ sequences:
     type: Sawtooth
     sequence:
       [
+        c_3,
+        c#_3,
+        d_3,
+        d#_3,
+        e_3,
+        f_3,
+        f#_3,
         g_3,
         g#_3,
         a_3,
@@ -28,16 +39,6 @@ sequences:
         a_4,
         a#_4,
         b_4,
-        c_5,
-        c#_5,
-        d_5,
-        d#_5,
-        e_5,
-        f_5,
-        f#_5,
-        g_5,
-        g#_5,
-        a_5,
       ]
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: [f1]
@@ -88,7 +89,7 @@ sequences:
         a_5,
       ]
     pan: { val: 0, mod: [], mod-amp: 0 }
-    filters: [f1]
+    filters: [f2]
     pitch: 440
     transpose: { val: 0, mod: [], mod-amp: 0 }
     randomize: true
@@ -136,7 +137,7 @@ sequences:
         a_5,
       ]
     pan: { val: 0, mod: [], mod-amp: 0 }
-    filters: [f1]
+    filters: [f3]
     pitch: 440
     transpose: { val: 0, mod: [], mod-amp: 0 }
     randomize: true
@@ -159,7 +160,7 @@ wavetables:
       attack: { val: 0.01, mod: [], mod-amp: 0 }
       decay: { val: 0.01, mod: [], mod-amp: 0 }
       sustain: { val: 0.01, mod: [], mod-amp: 0 }
-      release: { val: 0.12, mod: [], mod-amp: 0 }
+      release: { val: 0.001, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.5, mod: [], mod-amp: 0 }
       bpm: { val: 360, mod: [], mod-amp: 0 }
