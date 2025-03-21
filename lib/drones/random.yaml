@@ -1,0 +1,68 @@
+vol: 0.2
+out: [seq1]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 220, mod: [], mod-amp: 0 }
+
+oscillators:
+  - name: lfo2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 0.03, mod: [], mod-amp: 0 }
+
+  - name: lfo3
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    type: Sine
+    freq: { val: 4, mod: [lfo2], mod-amp: 2 }
+
+noises:
+  - name: n1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+
+samplers:
+  - name: s1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    freq: { val: 0.1, mod: [], mod-amp: 0 }
+    inputs: [n1]
+
+sequences:
+  - name: seq1
+    amp: { val: 0.3, mod: [lfo3], mod-amp: 0.07 }
+    type: Sawtooth
+    randomize: true
+    sequence:
+      [
+        c_2,
+        c#_2,
+        d_2,
+        d#_2,
+        e_2,
+        f_2,
+        f#_2,
+        g_2,
+        g#_2,
+        a_2,
+        a#_2,
+        b_2,
+        c_3,
+        c#_3,
+        d_3,
+        d#_3,
+        e_3,
+        f_3,
+        f#_3,
+        g_3,
+      ]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    envelope:
+      attack: { val: 2, mod: [], mod-amp: 0 }
+      decay: { val: 0.1, mod: [], mod-amp: 0 }
+      sustain: { val: 3, mod: [], mod-amp: 0 }
+      release: { val: 4.5, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 5, mod: [s1], mod-amp: 1 }
+    filters: [f1]
+    pitch: 440
