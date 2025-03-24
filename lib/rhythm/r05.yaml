@@ -1,15 +1,185 @@
 vol: 0
-out: [seq1]
+out: [seq1, seq2, n1]
 
 filters:
   - name: f1
     low-cutoff: { val: 0, mod: [], mod-amp: 0 }
-    high-cutoff: { val: 400, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 300, mod: [], mod-amp: 0 }
+
+  - name: f2
+    low-cutoff: { val: 2500, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 3000, mod: [], mod-amp: 0 }
+
+noises:
+  - name: n1
+    amp: { val: 0.03, mod: [], mod-amp: 0 }
+    filters: [f2]
+    envelope:
+       attack: { val: 0.01, mod: [], mod-amp: 0 }
+       decay: { val: 0.01, mod: [], mod-amp: 0 }
+       sustain: { val: 0.01, mod: [], mod-amp: 0 }
+       release: { val: 0.01, mod: [], mod-amp: 0 }
+       peak: { val: 1, mod: [], mod-amp: 0 }
+       sustain-level: { val: 0.3, mod: [], mod-amp: 0 }
+       bpm: { val: 550, mod: [], mod-amp: 0 }
+  
 
 sequences:
   - name: seq1
     amp: { val: 0.2, mod: [], mod-amp: 0 }
     type: Sawtooth
+    sequence: [
+        # 1-2
+        eb_2,
+        n,
+        eb_2,
+        eb_2,
+        n,
+        g_2,
+        n,
+        g_2,
+        d_2,
+        n,
+        d_2,
+        d_2,
+        n,
+        n,
+        n,
+        n,
+        d_2,
+        d_2,
+        n,
+        n,
+        n,
+        n,
+        d_2,
+        d_2,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        # 3-4
+        b_1,
+        d_2,
+        eb_2,
+        bb_2,
+        n,
+        b_1,
+        d_2,
+        eb_2,
+        bb_2,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        bb_1,
+        db_2,
+        eb_2,
+        a_2,
+        n,
+        bb_2,
+        a_2,
+        eb_2,
+        db_2,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        # 5-6
+        e_2,
+        n,
+        e_2,
+        e_2,
+        n,
+        a_2,
+        n,
+        a_2,
+        e_2,
+        n,
+        e_2,
+        e_2,
+        n,
+        n,
+        n,
+        n,
+        db_2,
+        db_2,
+        n,
+        n,
+        n,
+        n,
+        db_2,
+        db_2,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        # 7-8
+        bb_1,
+        db_2,
+        e_2,
+        c_3,
+        n,
+        bb_1,
+        db_2,
+        e_2,
+        c_3,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        e_2,
+        e_2,
+        n,
+        n,
+        n,
+        n,
+        e_2,
+        e_2,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+        n,
+      ]
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: [f1]
+    pitch: 440
+    transpose: { val: 0, mod: [], mod-amp: 0 }
+    randomize: false
+    envelope:
+      attack: { val: 0.01, mod: [], mod-amp: 0 }
+      decay: { val: 0.01, mod: [], mod-amp: 0 }
+      sustain: { val: 0, mod: [], mod-amp: 0 }
+      release: { val: 0.05, mod: [], mod-amp: 0 }
+      peak: { val: 1, mod: [], mod-amp: 0 }
+      sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
+      bpm: { val: 550, mod: [], mod-amp: 0 }
+      delay: 0
+
+  - name: seq2
+    amp: { val: 0.1, mod: [], mod-amp: 0 }
+    type: Square
     sequence: [
         # 1-2
         eb_2,
