@@ -1,0 +1,35 @@
+vol: 0
+out: [o1]
+
+filters:
+  - name: f1
+    low-cutoff: { val: 0, mod: [], mod-amp: 0 }
+    high-cutoff: { val: 1100, mod: [], mod-amp: 0 }
+
+oscillators:
+  - name: o1
+    amp: { val: 0.1, mod: [], mod-amp: 0 }
+    type: Triangle
+    freq: { val: 600, mod: [s1], mod-amp: 300 }
+    filters: [f1]
+
+noises:
+  - name: n1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    filters: []
+
+samplers:
+  - name: s1
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    freq: { val: 5, mod: [s2], mod-amp: 3 }
+    filters: []
+    inputs: [n1]
+
+  - name: s2
+    amp: { val: 1, mod: [], mod-amp: 0 }
+    pan: { val: 0, mod: [], mod-amp: 0 }
+    freq: { val: 0.7, mod: [], mod-amp: 0 }
+    filters: []
+    inputs: [n1]
