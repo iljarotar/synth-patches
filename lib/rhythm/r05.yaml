@@ -6,24 +6,6 @@ filters:
     low-cutoff: { val: 0, mod: [], mod-amp: 0 }
     high-cutoff: { val: 300, mod: [], mod-amp: 0 }
 
-  - name: f2
-    low-cutoff: { val: 2800, mod: [], mod-amp: 0 }
-    high-cutoff: { val: 3000, mod: [], mod-amp: 0 }
-
-noises:
-  - name: n1
-    amp: { val: 0.3, mod: [], mod-amp: 0 }
-    filters: [f2]
-    envelope:
-       attack: { val: 0.01, mod: [], mod-amp: 0 }
-       decay: { val: 0.01, mod: [], mod-amp: 0 }
-       sustain: { val: 0.01, mod: [], mod-amp: 0 }
-       release: { val: 0.01, mod: [], mod-amp: 0 }
-       peak: { val: 1, mod: [], mod-amp: 0 }
-       sustain-level: { val: 0.3, mod: [], mod-amp: 0 }
-       bpm: { val: 530, mod: [], mod-amp: 0 }
-  
-
 sequences:
   - name: seq1
     amp: { val: 0.2, mod: [], mod-amp: 0 }
@@ -174,7 +156,7 @@ sequences:
       release: { val: 0.05, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
-      bpm: { val: 530, mod: [], mod-amp: 0 }
+      bpm: { val: 510, mod: [], mod-amp: 0 }
       delay: 0
 
   - name: seq2
@@ -326,5 +308,5 @@ sequences:
       release: { val: 0.05, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
-      bpm: { val: 530, mod: [], mod-amp: 0 }
+      bpm: { val: 510, mod: [], mod-amp: 0 }
       delay: 0
