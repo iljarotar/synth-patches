@@ -10,16 +10,19 @@ sequences:
     amp: { val: 0.5, mod: [], mod-amp: 0 }
     type: Triangle
     sequence:
+      - n
       - b_2
       - c#_3
       - n
       - g_2
       - c_3
+      - n
       - a_2
       - f#_2
       - n
       - d#_3
       - e_2
+      - n
       - f_2
       - g#_2
       - n
@@ -44,10 +47,6 @@ sequences:
     amp: { val: 0.2, mod: [], mod-amp: 0 }
     type: Triangle
     sequence:
-      - b_2
-      - c#_3
-      - g_2
-      - n
       - c_3
       - a_2
       - f#_2
@@ -60,6 +59,10 @@ sequences:
       - d_3
       - n
       - a#_2
+      - b_2
+      - c#_3
+      - g_2
+      - n
     pan: { val: 0, mod: [], mod-amp: 0 }
     filters: [f1]
     pitch: 440
