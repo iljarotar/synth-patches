@@ -1,4 +1,4 @@
-vol: 0
+vol: 0.3
 out: [seq1]
 
 filters:
