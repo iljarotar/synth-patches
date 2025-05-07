@@ -35,7 +35,7 @@ samplers:
 
 sequences:
   - name: seq1
-    amp: { val: 0.3, mod: [lfo1], mod-amp: 0.2 }
+    amp: { val: 0.2, mod: [lfo1], mod-amp: 0.1 }
     type: Square
     sequence:
       [
@@ -73,7 +73,7 @@ sequences:
       bpm: { val: 800, mod: [], mod-amp: 0 }
 
   - name: seq2
-    amp: { val: 0.5, mod: [s1], mod-amp: 0.4 }
+    amp: { val: 0.2, mod: [s1], mod-amp: 0.1 }
     type: Sawtooth
     sequence:
       [
@@ -113,7 +113,7 @@ sequences:
       bpm: { val: 600, mod: [], mod-amp: 0 }
 
   - name: seq3
-    amp: { val: 0.5, mod: [lfo3], mod-amp: 0.1 }
+    amp: { val: 0.29, mod: [lfo3], mod-amp: 0.1 }
     type: Square
     sequence:
       [
