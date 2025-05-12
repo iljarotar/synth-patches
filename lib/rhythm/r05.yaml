@@ -153,7 +153,7 @@ sequences:
       attack: { val: 0.01, mod: [], mod-amp: 0 }
       decay: { val: 0.01, mod: [], mod-amp: 0 }
       sustain: { val: 0, mod: [], mod-amp: 0 }
-      release: { val: 0.05, mod: [], mod-amp: 0 }
+      release: { val: 0.08, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
       bpm: { val: 510, mod: [], mod-amp: 0 }
@@ -305,7 +305,7 @@ sequences:
       attack: { val: 0.01, mod: [], mod-amp: 0 }
       decay: { val: 0.01, mod: [], mod-amp: 0 }
       sustain: { val: 0, mod: [], mod-amp: 0 }
-      release: { val: 0.05, mod: [], mod-amp: 0 }
+      release: { val: 0.08, mod: [], mod-amp: 0 }
       peak: { val: 1, mod: [], mod-amp: 0 }
       sustain-level: { val: 0.9, mod: [], mod-amp: 0 }
       bpm: { val: 510, mod: [], mod-amp: 0 }
